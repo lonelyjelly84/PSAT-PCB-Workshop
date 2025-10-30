@@ -51,6 +51,57 @@ PrefsVaultGUID=
 PrefsRevisionGUID=
 
 [Document1]
+DocumentPath=555 Timer v2.PcbDoc
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=0
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=OXMCNEOD
+
+[Document2]
+DocumentPath=..\..\..\Users\bergh\Downloads\TLC555CDR\SOIC127P599X175-8N.PcbLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=0
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=HIBKAIVS
+
+[Document3]
+DocumentPath=..\..\..\Users\bergh\Downloads\TLC555CDR\TLC555CDR.SchLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=0
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=TSPUAKSF
+
+[Document4]
 DocumentPath=..\..\..\Users\bergh\Downloads\NCP15XH103F03RC\NCP15XH103F03RC.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -67,7 +118,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=VRCFLXAO
 
-[Document2]
+[Document5]
 DocumentPath=..\..\..\Users\bergh\Downloads\NCP15XH103F03RC\THRMC1005X55N.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -84,7 +135,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=WNUTWPHO
 
-[Document3]
+[Document6]
 DocumentPath=..\..\..\Users\bergh\Downloads\LM555CN_NOPB\LM555CN_NOPB.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -101,7 +152,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=LKBAMKEE
 
-[Document4]
+[Document7]
 DocumentPath=..\..\..\Users\bergh\Downloads\LM555CN_NOPB\DIP794W45P254L959H508Q8.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -118,7 +169,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=YVTVVITU
 
-[Document5]
+[Document8]
 DocumentPath=Output_Job_File.OutJob
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -135,7 +186,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document6]
+[Document9]
 DocumentPath=APSS_PCB_Project.PcbDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -152,7 +203,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=XONQOVUP
 
-[Document7]
+[Document10]
 DocumentPath=555 Timer.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -170,58 +221,62 @@ GenerateClassCluster=0
 DocumentUniqueId=QKSHIFDQ
 
 [GeneratedDocument1]
-DocumentPath=..\..\APSS-Prog-Adapter_proper\Shared Libraries\APSSTemplates\APSS-PCB-Project\Fabrication Files\NC Drill\PCB_Project.DRR
+DocumentPath=Project Outputs for PCB Workshop\Design Rule Check - APSS_PCB_Project.html
 DItemRevisionGUID=
 
 [GeneratedDocument2]
-DocumentPath=..\..\APSS-Prog-Adapter_proper\Shared Libraries\APSSTemplates\APSS-PCB-Project\Fabrication Files\Gerber\PCB_Project.EXTREP
+DocumentPath=..\..\APSS-Prog-Adapter_proper\Shared Libraries\APSSTemplates\APSS-PCB-Project\Fabrication Files\NC Drill\PCB_Project.DRR
 DItemRevisionGUID=
 
 [GeneratedDocument3]
-DocumentPath=..\..\APSS-Prog-Adapter_proper\Shared Libraries\APSSTemplates\APSS-PCB-Project\Fabrication Files\Gerber\PCB_Project.GBL
+DocumentPath=..\..\APSS-Prog-Adapter_proper\Shared Libraries\APSSTemplates\APSS-PCB-Project\Fabrication Files\Gerber\PCB_Project.EXTREP
 DItemRevisionGUID=
 
 [GeneratedDocument4]
-DocumentPath=..\..\APSS-Prog-Adapter_proper\Shared Libraries\APSSTemplates\APSS-PCB-Project\Fabrication Files\Gerber\PCB_Project.GBO
+DocumentPath=..\..\APSS-Prog-Adapter_proper\Shared Libraries\APSSTemplates\APSS-PCB-Project\Fabrication Files\Gerber\PCB_Project.GBL
 DItemRevisionGUID=
 
 [GeneratedDocument5]
-DocumentPath=..\..\APSS-Prog-Adapter_proper\Shared Libraries\APSSTemplates\APSS-PCB-Project\Fabrication Files\Gerber\PCB_Project.GBP
+DocumentPath=..\..\APSS-Prog-Adapter_proper\Shared Libraries\APSSTemplates\APSS-PCB-Project\Fabrication Files\Gerber\PCB_Project.GBO
 DItemRevisionGUID=
 
 [GeneratedDocument6]
-DocumentPath=..\..\APSS-Prog-Adapter_proper\Shared Libraries\APSSTemplates\APSS-PCB-Project\Fabrication Files\Gerber\PCB_Project.GBS
+DocumentPath=..\..\APSS-Prog-Adapter_proper\Shared Libraries\APSSTemplates\APSS-PCB-Project\Fabrication Files\Gerber\PCB_Project.GBP
 DItemRevisionGUID=
 
 [GeneratedDocument7]
-DocumentPath=..\..\APSS-Prog-Adapter_proper\Shared Libraries\APSSTemplates\APSS-PCB-Project\Fabrication Files\Gerber\PCB_Project.GKO
+DocumentPath=..\..\APSS-Prog-Adapter_proper\Shared Libraries\APSSTemplates\APSS-PCB-Project\Fabrication Files\Gerber\PCB_Project.GBS
 DItemRevisionGUID=
 
 [GeneratedDocument8]
-DocumentPath=..\..\APSS-Prog-Adapter_proper\Shared Libraries\APSSTemplates\APSS-PCB-Project\Fabrication Files\Gerber\PCB_Project.GTL
+DocumentPath=..\..\APSS-Prog-Adapter_proper\Shared Libraries\APSSTemplates\APSS-PCB-Project\Fabrication Files\Gerber\PCB_Project.GKO
 DItemRevisionGUID=
 
 [GeneratedDocument9]
-DocumentPath=..\..\APSS-Prog-Adapter_proper\Shared Libraries\APSSTemplates\APSS-PCB-Project\Fabrication Files\Gerber\PCB_Project.GTO
+DocumentPath=..\..\APSS-Prog-Adapter_proper\Shared Libraries\APSSTemplates\APSS-PCB-Project\Fabrication Files\Gerber\PCB_Project.GTL
 DItemRevisionGUID=
 
 [GeneratedDocument10]
-DocumentPath=..\..\APSS-Prog-Adapter_proper\Shared Libraries\APSSTemplates\APSS-PCB-Project\Fabrication Files\Gerber\PCB_Project.GTP
+DocumentPath=..\..\APSS-Prog-Adapter_proper\Shared Libraries\APSSTemplates\APSS-PCB-Project\Fabrication Files\Gerber\PCB_Project.GTO
 DItemRevisionGUID=
 
 [GeneratedDocument11]
-DocumentPath=..\..\APSS-Prog-Adapter_proper\Shared Libraries\APSSTemplates\APSS-PCB-Project\Fabrication Files\Gerber\PCB_Project.GTS
+DocumentPath=..\..\APSS-Prog-Adapter_proper\Shared Libraries\APSSTemplates\APSS-PCB-Project\Fabrication Files\Gerber\PCB_Project.GTP
 DItemRevisionGUID=
 
 [GeneratedDocument12]
-DocumentPath=..\..\APSS-Prog-Adapter_proper\Shared Libraries\APSSTemplates\APSS-PCB-Project\Fabrication Files\NC Drill\PCB_Project.LDP
+DocumentPath=..\..\APSS-Prog-Adapter_proper\Shared Libraries\APSSTemplates\APSS-PCB-Project\Fabrication Files\Gerber\PCB_Project.GTS
 DItemRevisionGUID=
 
 [GeneratedDocument13]
-DocumentPath=..\..\APSS-Prog-Adapter_proper\Shared Libraries\APSSTemplates\APSS-PCB-Project\Fabrication Files\Gerber\PCB_Project.REP
+DocumentPath=..\..\APSS-Prog-Adapter_proper\Shared Libraries\APSSTemplates\APSS-PCB-Project\Fabrication Files\NC Drill\PCB_Project.LDP
 DItemRevisionGUID=
 
 [GeneratedDocument14]
+DocumentPath=..\..\APSS-Prog-Adapter_proper\Shared Libraries\APSSTemplates\APSS-PCB-Project\Fabrication Files\Gerber\PCB_Project.REP
+DItemRevisionGUID=
+
+[GeneratedDocument15]
 DocumentPath=..\..\APSS-Prog-Adapter_proper\Shared Libraries\APSSTemplates\APSS-PCB-Project\Fabrication Files\Gerber\PCB_Project.RUL
 DItemRevisionGUID=
 
@@ -576,6 +631,18 @@ OutputDocumentPath1=
 OutputVariantName1=[No Variations]
 OutputDefault1=0
 PageOptions1=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintScale=1.00|XCorrection=1.00|YCorrection=1.00|PrintKind=1|BorderSize=5000000|LeftOffset=0|BottomOffset=0|Orientation=2|PaperLength=1000|PaperWidth=1000|Scale=100|PaperSource=7|PrintQuality=-3|MediaType=1|DitherType=10|PrintScaleMode=1|PaperKind=A4|PaperIndex=9
+Configuration1_Name1=ColumnNameFormat
+Configuration1_Item1=CaptionAsName
+Configuration1_Name2=ForceUpdateSettings
+Configuration1_Item2=False
+Configuration1_Name3=General
+Configuration1_Item3=OpenExported=False|AddToProject=False|ReportBOMViolationsInMessages=False|ForceFit=False|NotFitted=False|Database=False|DatabasePriority=False|IncludePcbData=False|IncludeVaultData=False|IncludeCloudData=False|IncludeDocumentData=True|IncludeAlternatives=False|ShowExportOptions=True|TemplateFilename=|TemplateVaultGuid=|TemplateItemGuid=|TemplateRevisionGuid=|BatchMode=5|FormWidth=1200|FormHeight=710|SupplierProdQty=1|SupplierAutoQty=False|SupplierUseCachedPricing=False|SupplierCurrency=USD|SolutionsPerItem=1|SuppliersPerSolution=1|ViewType=0|BomSetName=
+Configuration1_Name4=GroupOrder
+Configuration1_Item4=Comment=True|Footprint=True
+Configuration1_Name5=SortOrder
+Configuration1_Item5=Designator=Up|Comment=Up|Footprint=Up
+Configuration1_Name6=VisibleOrder
+Configuration1_Item6=Comment=120|Description=120|Designator=120|Footprint=120|LibRef=120|Quantity=120
 OutputType2=BOM_ReportCompare
 OutputName2=BOM Compare
 OutputDocumentPath2=
