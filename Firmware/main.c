@@ -7,9 +7,10 @@ Author : navini*/
 #include <math.h>
 #include <stdint.h>
 #include <avr/io.h>
+#include <avr/interrupt.h>
+#include <util/delay.h>
 
-
-#define F_CPU 16000000UL
+#define F_CPU 2000000UL
 #define VREF 5.0
 #define ADCMAX 1023.0
 #define BETA 3380.0
@@ -21,7 +22,7 @@ Author : navini*/
 
 volatile uint16_t counter = 0;
 
-void ISR(INT0_vect) {
+ISR(INT0_vect) {
 	counter++;
 }
 
@@ -38,14 +39,15 @@ void adc_init(void){
 }
 
 uint16_t adc_read(void){
-	ADMUX &= ~((1 << MUX0) | (1 << MUX1)); //Selecting ADC Channel 0 
-	ADCSRA |= (1 << ADSC); //Starting conversion 
+	ADMUX &= 0xF0;           // Clear old channel selection bits
+	ADMUX |= 0;              // Select ADC0
+	ADCSRA |= (1 << ADSC);   // Start conversion
+	while (ADCSRA & (1 << ADSC)); // Wait for conversion to finish
 
-	while(ADCSRA & (1 <<ADSC)){
-		//this while loop waits for conversion to finish
-	}
-	//return ADC;
-	return ((uint16_t)ADCH << 8) | ADCL;// this is another method of returning the ADC value!
+	uint16_t result = ADCL;       // Read low byte first
+	result |= (ADCH << 8);        // Then high byte
+
+	return result;
 
 }
 
@@ -69,10 +71,10 @@ uint16_t tempConversion(int16_t adcValue){
 
 
 void UART_init(unsigned int baud) {
-	unsigned int ubrr = F_CPU/16/baud - 1;
+	unsigned int ubrr = F_CPU/16/baud - 1;  
 	UBRR0H = (unsigned char)(ubrr >> 8);
 	UBRR0L = (unsigned char)ubrr;
-	UCSR0B = (1 << TXEN0);                 // Enable transmitter
+	UCSR0B = (1 << TXEN0);                 // Enable UART transmit 
 	UCSR0C = (1 << UCSZ01) | (1 << UCSZ00); // 8-bit data
 }
 
@@ -91,20 +93,20 @@ void UART_print(char *str) {
 
 int main(void)
 {
-	int_init();
+	int_init();  
 	adc_init();
 	UART_init(9600);
 	
 	char buffer[100];
-	//sei();
-	/* Replace with your application code */
+	sei();
+
 	while (1)
 	{
-	uint16_t adcVal = adc_read();
-	sprintf(buffer,"ADC Count: %d\n\r", adcVal);
-	UART_print(buffer);
-
-	uint16_t tempC = tempConversion(adcVal);
-	// UART_print("Temp Value: %d\n\r", tempC);
+	uint16_t adcVal = adc_read();	// retrieve the adc value
+	uint16_t tempC = tempConversion(adcVal); // retrieve the temperature value
+	sprintf(buffer, "ADC: %u\tTemp: %d C\r\n", adcVal, tempC);
+	UART_print(buffer);	// transmit the buffer
+	
+	_delay_ms(1000);  // delay for slower transmit
 	}
 }
