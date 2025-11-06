@@ -9,6 +9,7 @@ Author : navini*/
 #include <avr/io.h>
 
 
+#define F_CPU 16000000UL
 #define VREF 5.0
 #define ADCMAX 1023.0
 #define BETA 3380.0
@@ -36,7 +37,7 @@ void adc_init(void){
 
 }
 
-int16_t adc_read(void){
+uint16_t adc_read(void){
 	ADMUX &= ~((1 << MUX0) | (1 << MUX1)); //Selecting ADC Channel 0 
 	ADCSRA |= (1 << ADSC); //Starting conversion 
 
@@ -49,7 +50,7 @@ int16_t adc_read(void){
 }
 
 //converts the ADC voltage into a temperature 
-int16_t tempConversion(int16_t adcValue){
+uint16_t tempConversion(int16_t adcValue){
 	//converting adc count to voltage 
 	double VoltageTemp = (adcValue / ADCMAX) * VCC; 
 	
@@ -66,14 +67,44 @@ int16_t tempConversion(int16_t adcValue){
 	return (int16_t)tempInCelsius;
 }
 
+
+void UART_init(unsigned int baud) {
+	unsigned int ubrr = F_CPU/16/baud - 1;
+	UBRR0H = (unsigned char)(ubrr >> 8);
+	UBRR0L = (unsigned char)ubrr;
+	UCSR0B = (1 << TXEN0);                 // Enable transmitter
+	UCSR0C = (1 << UCSZ01) | (1 << UCSZ00); // 8-bit data
+}
+
+void UART_transmit(unsigned char data) {
+	while (!(UCSR0A & (1 << UDRE0))); // Wait for empty buffer
+	UDR0 = data;                      // Send data
+}
+
+void UART_print(char *str) {
+	while (*str) {
+		UART_transmit(*str++);
+	}
+}
+
+
+
 int main(void)
 {
 	int_init();
-
+	adc_init();
+	UART_init(9600);
+	
+	char buffer[100];
 	//sei();
 	/* Replace with your application code */
 	while (1)
 	{
-	tempConversion(adc_read);
+	uint16_t adcVal = adc_read();
+	sprintf(buffer,"ADC Count: %d\n\r", adcVal);
+	UART_print(buffer);
+
+	uint16_t tempC = tempConversion(adcVal);
+	// UART_print("Temp Value: %d\n\r", tempC);
 	}
 }
