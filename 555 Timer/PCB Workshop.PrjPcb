@@ -51,7 +51,7 @@ PrefsVaultGUID=
 PrefsRevisionGUID=
 
 [Document1]
-DocumentPath=555 Timer v2.PcbDoc
+DocumentPath=Libraries\SOIC127P599X175-8N.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -65,10 +65,10 @@ ClassGenCCAutoRoomEnabled=0
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=OXMCNEOD
+DocumentUniqueId=
 
 [Document2]
-DocumentPath=..\..\..\Users\bergh\Downloads\TLC555CDR\SOIC127P599X175-8N.PcbLib
+DocumentPath=Libraries\TLC555CDR\TLC555CDR.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -82,10 +82,10 @@ ClassGenCCAutoRoomEnabled=0
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=HIBKAIVS
+DocumentUniqueId=
 
 [Document3]
-DocumentPath=..\..\..\Users\bergh\Downloads\TLC555CDR\TLC555CDR.SchLib
+DocumentPath=Libraries\NCP15XH103F03RC\NCP15XH103F03RC.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -99,27 +99,10 @@ ClassGenCCAutoRoomEnabled=0
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=TSPUAKSF
+DocumentUniqueId=
 
 [Document4]
-DocumentPath=..\..\..\Users\bergh\Downloads\NCP15XH103F03RC\NCP15XH103F03RC.SchLib
-AnnotationEnabled=1
-AnnotateStartValue=1
-AnnotationIndexControlEnabled=0
-AnnotateSuffix=
-AnnotateScope=All
-AnnotateOrder=-1
-DoLibraryUpdate=1
-DoDatabaseUpdate=1
-ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=0
-ClassGenNCAutoScope=None
-DItemRevisionGUID=
-GenerateClassCluster=0
-DocumentUniqueId=VRCFLXAO
-
-[Document5]
-DocumentPath=..\..\..\Users\bergh\Downloads\NCP15XH103F03RC\THRMC1005X55N.PcbLib
+DocumentPath=Libraries\NCP15XH103F03RC\THRMC1005X55N.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -135,8 +118,8 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=WNUTWPHO
 
-[Document6]
-DocumentPath=..\..\..\Users\bergh\Downloads\LM555CN_NOPB\LM555CN_NOPB.SchLib
+[Document5]
+DocumentPath=Libraries\LM555CN_NOPB\LM555CN_NOPB.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -150,26 +133,26 @@ ClassGenCCAutoRoomEnabled=0
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=LKBAMKEE
+DocumentUniqueId=
+
+[Document6]
+DocumentPath=Libraries\DIP794W45P254L959H508Q8.PcbLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=0
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
 
 [Document7]
-DocumentPath=..\..\..\Users\bergh\Downloads\LM555CN_NOPB\DIP794W45P254L959H508Q8.PcbLib
-AnnotationEnabled=1
-AnnotateStartValue=1
-AnnotationIndexControlEnabled=0
-AnnotateSuffix=
-AnnotateScope=All
-AnnotateOrder=-1
-DoLibraryUpdate=1
-DoDatabaseUpdate=1
-ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=0
-ClassGenNCAutoScope=None
-DItemRevisionGUID=
-GenerateClassCluster=0
-DocumentUniqueId=YVTVVITU
-
-[Document8]
 DocumentPath=Output_Job_File.OutJob
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -186,7 +169,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document9]
+[Document8]
 DocumentPath=APSS_PCB_Project.PcbDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -203,7 +186,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=XONQOVUP
 
-[Document10]
+[Document9]
 DocumentPath=555 Timer.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
